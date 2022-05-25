@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.container}>
 
       <div className={styles.centered}>
-        <h1 class={styles.heading}>Countries &amp; their capital's population</h1>
+        <h1 className={styles.heading}>Countries &amp; their capital's population</h1>
         <Link href="/posts">
           <button className={styles.buttonUI}>Show Locations</button>
         </Link>

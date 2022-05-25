@@ -11,7 +11,7 @@ export default async (req, res) => {
 
     const sheets = google.sheets({ version: 'v4', auth });
 
-    const range = `A${id}:C${id}`;
+    const range = `A${id}:D${id}`;
 
     switch(req.method) {
         case "GET":
@@ -28,7 +28,7 @@ export default async (req, res) => {
             const { country, city, population } = body;
             const submitResponse = await sheets.spreadsheets.values.append({
                 spreadsheetId: process.env.SHEET_ID,
-                range: 'population!A2:C',
+                range: 'population!A2:D',
                 valueInputOption: 'USER_ENTERED',
                 requestBody: {
                     values: [[country, city, population]],
