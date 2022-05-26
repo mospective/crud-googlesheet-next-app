@@ -69,7 +69,7 @@ export default function Post({ posts, loading }) {
                   <Link href={`/posts/${i + 2}/?=${country}`}>
                     <a>View more</a>
                   </Link>
-                  <button onClick={removeLocationHandler} data-label={ i + 2 }>
+                  <button className="delete" onClick={removeLocationHandler} data-label={ i + 2 }>
                      <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="94.926"
