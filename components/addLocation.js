@@ -61,11 +61,6 @@ const AddLocation = ({ pullRefresh, loading }) => {
                     <p>Population:</p>
                     <input type="text" onChange={onPopulationHandler} value={population} />
                 </div>
-                <div className="input">
-                    <p>Country flag:</p>
-                    <p>To add a flag, please add country code. This can be found <a href="https://www.iso.org/obp/ui/#search" target="_blank">here</a></p>
-                    <input type="text" onChange={onCountryFlagHandler} value={flag} />
-                </div>
                 <button>Submit a location</button>
             </form>
         </>

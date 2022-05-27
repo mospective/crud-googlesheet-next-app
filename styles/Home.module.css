@@ -36,14 +36,56 @@
   flex-basis: 23%;
   margin: 0 0 25px 0;
   background-color: #ffffff;
-  padding: 15px;
   min-height: 200px;
-  box-sizing: border-box;
-  /* margin-right: 1%;
-  margin-bottom: 1%; */
   border-radius: 10px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s;
+  overflow: hidden;
+}
+
+.card-content {
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #FFF8E1;
+}
+
+.title-heading {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.cta-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.view {
+  display: block;
+  text-decoration: none;
+  background-color: #1976D2;
+  color: #fafafa;
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.delete {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.delete svg {
+  width: 15px;
+  height: 15px;
+  pointer-events: none;
 }
 
 .buttonUI {
