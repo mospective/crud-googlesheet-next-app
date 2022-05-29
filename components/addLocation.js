@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from  "../styles/addLocation.module.css";
 
 const AddLocation = ({ pullRefresh, loading }) => {
     const [country, setCountry] = useState("");
@@ -47,21 +48,23 @@ const AddLocation = ({ pullRefresh, loading }) => {
 
     return (
         <>
-            <h1>Add a new location</h1>
-            <form onSubmit={submitHandler}>
-                <div className="input">
-                    <p>Country:</p>
-                    <input type="text" onChange={onCountryHandler} value={country} />
+            <h1 className={styles["title-heading"]}>Add a new location</h1>
+            <form className={styles.form} onSubmit={submitHandler}>
+                <div className={styles.inputgroup}>
+                    <div className={styles.input}>
+                        <p>Country:</p>
+                        <input type="text" onChange={onCountryHandler} value={country} />
+                    </div>
+                    <div className={styles.input}>
+                        <p>City:</p>
+                        <input type="text" onChange={onCityHandler} value={city} />
+                    </div>
+                    <div className={styles.input}>
+                        <p>Population:</p>
+                        <input type="text" onChange={onPopulationHandler} value={population} />
+                    </div>
                 </div>
-                <div className="input">
-                    <p>City:</p>
-                    <input type="text" onChange={onCityHandler} value={city} />
-                </div>
-                <div className="input">
-                    <p>Population:</p>
-                    <input type="text" onChange={onPopulationHandler} value={population} />
-                </div>
-                <button>Submit a location</button>
+                <button className={styles.submit}>Submit a location</button>
             </form>
         </>
     );

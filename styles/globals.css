@@ -100,3 +100,27 @@ h5 {
   padding: 0 10px;
   box-sizing: border-box;
 }
+
+.return-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 80px 10px;
+  background-color: #047294;
+}
+
+.back-btn {
+  border: 0;
+  background-color: #07aee0;
+  padding: 12px 20px;
+  border-radius: 40px;
+  color: #fafafa;
+  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.5s ease-in-out;
+}
+
+.back-btn:hover {
+  background-color: #2e599d;
+}
